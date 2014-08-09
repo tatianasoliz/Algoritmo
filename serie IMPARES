@@ -1,0 +1,19 @@
+#include "conio.h"
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+
+{int N,S,i;
+cout<<"ingrese el valor de N:";
+cin>>N;
+S=0;
+for(i=1;i<=N;i++)
+if(i%2!=0)
+    S=S+1;
+cout<<"La suma es:";
+cout<<S;
+getch();
+}
