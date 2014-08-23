@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+{
+	void main()
+	int f,n,i,s;
+	printf("ingrese numero");
+	scanf("%d",n);
+	printf("ingrese numero");
+	scanf("%d",&x);
+	s=0
+	for(i=1;i<=n;i++)
+		f=1;
+	for(j=1;i<=n;i++)
+	   f=f*j;
+	   s=s+(pow(x,i))/f;
+
+	printf("ingrese serie: s");
+	system("pause");
+
+}
