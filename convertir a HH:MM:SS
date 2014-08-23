@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+{
+  void main()
+  int H,M,S,M,t;
+  printf("ingrese un numero");
+  scanf("%d",&t);
+ 
+  Hora=3600Minuto;
+  M=60S;
+ 
+  H=t/Hora;
+  t=tmodHora;
+  M=t/Minuto;
+  S=tmodMinuto;
+  printf("ingrese un numero: t"); 
+  sistem("pause");
+}
