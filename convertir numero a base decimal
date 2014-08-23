@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+void main()
+{
+  int x,n,r;
+  cout<<"ingrese numero base";
+  cin>>n;
+  cout<<"ingrese cualquier base";
+  cin>>n;
+	r=cambiobase(n,x);
+	cout<<r;
+  getch;
+}
