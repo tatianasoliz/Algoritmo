@@ -1,0 +1,77 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+//-------PROTOTIPO DE FUNCIONES--------
+void creaVector(int cod[],int n);
+void mostrarVector(int cod[],int n);
+void ordenaVector(int cod[],int aux,int n);
+void modificaVector(int cod[],int n);
+
+using namespace std;
+
+int main()
+{
+  int n;
+  int cod[],aux;
+
+  cout<<"cuantos valores va a ingresar: ";
+  cin>>n;
+
+  creaVector(cod,n);
+  ordenaVector(cod,aux,n);
+  modificaVector(cod,n);
+  system("pause");
+  return 0;
+}
+
+//------------CREA VECTOR-------------
+void creaVector(int cod[],int n){
+for(int i=0;i<n;i++){
+cout<<"ingrese:";
+cin>>cod[i];
+}
+
+}
+
+//------------MOSTRAR VECTOR------------
+void mostrarVector(int cod[],int n){
+for(int i=0;i<n;i++){
+cout<<cod[i];
+cout<<"\n";
+}
+}
+
+//---------------ORDENA VECTOR----------
+void ordenaVector(int cod[],int aux,int n){
+for(int i=0;i<n;i++){
+for(int j=i+1; j<n;j++){
+if(cod[i]>cod[j]){
+aux=cod[i];
+cod[i]=cod[j];
+cod[j]=aux;
+}
+}
+}
+mostrarVector(cod,n);
+}
+
+
+//---------------MODIFICA VECTOR -------------
+void modificaVector(int cod[],int n){
+int x,num;
+cout<<"Posicion a modificar:";
+cin>>x;
+if(x<=n){
+cout<<"ingrese numero: ";
+cin>>num;
+cod[x-1]=num;
+
+mostrarVector(cod,n);
+}else cout<<"Posicion fuera de rango"<<endl;
+}
+
+
